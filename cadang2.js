@@ -5,7 +5,7 @@ const check = document.querySelectorAll(".img");
 const remove = document.querySelectorAll(".throw");
 
 
-button.addEventListener("click", function () {
+button.addEventListener("click", function (e) {
     const form = formList.value
     if (form === "") {
         alert("Anda belum memasukan teks")
@@ -44,12 +44,13 @@ button.addEventListener("click", function () {
         addList.remove();
     })
 
-    if(e.target == list) {
+    if(e.target) {
          number++
+    } else if (e.target.classList.contains("hapus") || e.target.classList.contains("lup")) {
+        number--
     }
 
 })
-
 
 
 list.addEventListener("click", function (e) {
@@ -57,6 +58,7 @@ list.addEventListener("click", function (e) {
     if (e.target.classList.contains("img")) {
         e.target.classList.toggle("nis");
         e.target.parentElement.classList.toggle("sas");
+        number--
     }
 });
 

@@ -1,9 +1,10 @@
-/* Styling Container And Form input*/
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Caveat:wght@400..700&family=Lobster&family=Permanent+Marker&family=Poetsen+One&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     background-color: darksalmon;
+    font-family: "Arimo", sans-serif;
 }
 
 section {
@@ -148,9 +149,24 @@ ul li {
     text-decoration: line-through;
     text-decoration-thickness: ;
     /* Tebal coretan */
-    opacity: 0.5;
-
 }
+
+.sas .we {
+    opacity: 0.5;
+}
+
+h4 {
+    font-size: 17px;
+}
+
+#amount-task {
+    color:brown
+}
+
+#task-suscesful {
+    color:darkgreen;
+}
+
 
 .nis {
     content: ;
@@ -161,4 +177,23 @@ ul li {
     border-radius: 50%;
     border: none;
     display: block;
+
+}
+
+.value-task {
+    margin-top: 150px;
+    box-sizing: border-box;
+    display: flex;
+    align-content:end;
+    justify-content: space-between;
+}
+
+#task-suscesful {
+    position: relative;
+    right: 20px;
+
+}
+
+#amount-task {
+    padding-left: 10px;
 }
