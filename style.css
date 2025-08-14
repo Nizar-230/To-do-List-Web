@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: darksalmon;
+    background-color:rgb(248, 193, 126);
     font-family: "Arimo", sans-serif;
 }
 
@@ -101,7 +101,11 @@ h1 {
     width: 35px;
     height: 35px;
     float: left;
+    cursor: pointer;
+}
 
+.hapus:hover {
+    background-color:lightsalmon;
 }
 
 ul li {
@@ -179,6 +183,8 @@ h4 {
     display: block;
 
 }
+
+/*Styling parameter To-do*/
 
 .value-task {
     margin-top: 150px;
